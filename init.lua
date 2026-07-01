@@ -9,3 +9,6 @@ require('plugins.editor')
 require('config.options')
 require('config.keymaps')
 require('config.autocmds')
+
+-- Experimental Feature
+require('vim._core.ui2').enable({})
