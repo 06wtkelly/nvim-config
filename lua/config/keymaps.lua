@@ -22,5 +22,6 @@ map("n", "<C-j", "<C-w>j", "Navigate window down")
 map("n", "<C-k", "<C-w>k", "Navigate window up")
 map("n", "<C-l", "<C-w>l", "Navigate window right")
 
--- File Explorer (Netrw)
-map("n", "<leader>fe", ":Ex<CR>", "Open Netrw [F]ile [E]xplorer")
+-- File Explorer (Netrw + NeoTree)
+map("n", "<leader>fe", "<CMD>Ex<CR>", "Open Netrw [F]ile [E]xplorer")
+map("n", "<leader>tt", "<CMD>Neotree toggle<CR>");
