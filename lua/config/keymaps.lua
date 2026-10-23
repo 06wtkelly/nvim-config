@@ -2,7 +2,9 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 local function map(mode, keymap, command, desc)
-	vim.keymap.set(mode, keymap, command, { noremap = true, silent = true, desc = desc })
+	vim.keymap.set(mode, keymap, command,
+        { noremap = true, silent = true, desc = desc }
+    )
 end
 
 -- Indenting
@@ -25,3 +27,14 @@ map("n", "<C-l", "<C-w>l", "Navigate window right")
 -- File Explorer (Netrw + NeoTree)
 map("n", "<leader>fe", "<CMD>Ex<CR>", "Open Netrw [F]ile [E]xplorer")
 map("n", "<leader>tt", "<CMD>Neotree toggle<CR>");
+
+-- Light/Dark Mode Toggle
+local function toggle_background()
+    if vim.o.background == "dark" then
+        vim.o.background = "light"
+    else
+        vim.o.background = "dark"
+    end
+end
+
+map("n", "<leader>th", toggle_background, "Toggle light/dark background")

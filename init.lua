@@ -4,7 +4,7 @@ require('plugins.ui')
 require('plugins.git')
 require('plugins.completion')
 require('plugins.editor')
-require('plugins.file_nav')
+-- require('plugins.file_nav')
 
 -- Load Config Files
 require('config.options')

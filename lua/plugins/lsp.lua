@@ -14,5 +14,6 @@ require('mason-tool-installer').setup({
 		"stylua",
         "pyright",
         "clangd",
+        "ts_ls",
 	}
 })
